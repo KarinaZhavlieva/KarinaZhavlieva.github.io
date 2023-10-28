@@ -1,0 +1,57 @@
+# Site settings
+title: Karina Zhavlieva . Art
+email: your-email@domain.com
+url: ""
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+keywords: "your keywords, separated by commas"
+skills: "Музейная девушка"
+meta_author: LastName FirstName
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+#contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: b2b2b2 #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 3a706b #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+#footer:
+#  чей сайт: Карина Жавлиева
+#  что-то: Location
+#  Социальное: Around the Web
+#  ещё что-то: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: instagram
+    url: http://instagram.com/zzzhavlieva
+  - title: telegram
+    url: https://t.me/artxona
+
+
+# Credits content
+credits: ''
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""

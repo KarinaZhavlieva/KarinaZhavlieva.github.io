@@ -1,0 +1,8 @@
+---
+layout: default
+title: Кайф
+modal-id: 1
+img: kaef.JPG
+alt: image-alt
+description: Живу с кайфом
+---

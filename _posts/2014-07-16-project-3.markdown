@@ -1,0 +1,8 @@
+---
+layout: default
+title: Музейная девушка
+modal-id: 3
+img: anikushino.JPG
+alt: image-alt
+description: Моё Аникушино
+---

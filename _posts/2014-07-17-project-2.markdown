@@ -1,0 +1,8 @@
+---
+layout: default
+title: Кавказ
+modal-id: 2
+img: kaukasus.JPG
+alt: image-alt
+description: Люблю Кавказ
+---
