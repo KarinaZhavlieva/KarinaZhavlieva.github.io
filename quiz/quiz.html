@@ -1,0 +1,68 @@
+---
+layout: none
+permalink: /quiz/
+---
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Викторина</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Викторина про Карину</h1>
+        
+        <!-- Экран выбора количества игроков -->
+        <div id="player-selection" class="screen">
+            <h2>Выберите количество игроков</h2>
+            <div class="player-count-controls">
+                <button id="decrease-players">-</button>
+                <span id="player-count">2</span>
+                <button id="increase-players">+</button>
+            </div>
+            <button id="start-name-entry" class="primary-button">Далее</button>
+        </div>
+        
+        <!-- Экран ввода имен игроков -->
+        <div id="name-entry" class="screen hidden">
+            <h2>Введите имена игроков</h2>
+            <div id="player-names-container"></div>
+            <button id="start-game" class="primary-button">Начать игру</button>
+        </div>
+        
+        <!-- Экран вопроса -->
+        <div id="question-screen" class="screen hidden">
+            <div class="game-info">
+                <div id="current-player">Игрок: <span id="player-name"></span></div>
+                <div id="question-number">Вопрос <span id="current-question">1</span> из <span id="total-questions">15</span></div>
+            </div>
+            <h2 id="question-text"></h2>
+            <div id="options-container"></div>
+            <button id="submit-answer" class="primary-button">Ответить</button>
+        </div>
+        
+        <!-- Экран результатов раунда -->
+        <div id="round-results" class="screen hidden">
+            <h2>Результаты раунда</h2>
+            <div id="question-image-container" class="image-container">
+                <img id="question-image" src="" alt="Изображение к вопросу">
+            </div>
+            <div id="correct-answer-container">
+                <p>Правильный ответ: <span id="correct-answer"></span></p>
+            </div>
+            <div id="round-players-results"></div>
+            <button id="next-question" class="primary-button">Следующий вопрос</button>
+        </div>
+        
+        <!-- Экран финальных результатов -->
+        <div id="final-results" class="screen hidden">
+            <h2>Финальные результаты</h2>
+            <div id="leaderboard"></div>
+            <button id="restart-game" class="primary-button">Играть снова</button>
+        </div>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
